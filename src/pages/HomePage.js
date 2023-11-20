@@ -10,7 +10,7 @@ const HomePage = () => {
                 <MoviesList></MoviesList>
             </section>
             <section className="movies-main page-container mb-10 text-white">
-                <h2 className="capitalize mb-6 text-2xl font-bold">Top rated movies</h2>
+                <h2 className="capitalize mb-6 text-2xl font-bold">Top Rated Movies</h2>
                 <MoviesList type="top_rated"></MoviesList>
             </section>
             <section className="movies-main page-container mb-10 text-white">

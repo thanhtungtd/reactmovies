@@ -9,7 +9,7 @@ import {v4} from "uuid";
 
 
 // https://api.themoviedb.org/3/search/movie?api_key=
-const pageCount = 5;
+// const pageCount = 5;------------------------------
 const itemsPerPage = 20;
 
 const MoviePage = () => {
