@@ -9,7 +9,6 @@ import {v4} from "uuid";
 
 
 // https://api.themoviedb.org/3/search/movie?api_key=
-// const pageCount = 5;------------------------------
 const itemsPerPage = 20;
 
 const MoviePage = () => {
@@ -61,8 +60,6 @@ const MoviePage = () => {
             </div>
             {/* {loading && <div className="flex w-full animate-bounce justify-center">
                 <div className="mx-3 h-5 w-5 w-10 rounded-full bg-purple-800 animate-ping"></div>
-                <div className="mx-3 h-5 w-5 w-10 rounded-full bg-purple-600 animate-ping"></div>
-                <div className="mx-3 h-5 w-5 w-10 rounded-full bg-purple-400 animate-ping"></div>
             </div>} */}
             {loading && <div className="grid grid-cols-5 gap-10">
                 {new Array(itemsPerPage).fill(0).map(() => (
