@@ -6,7 +6,7 @@ import Button from '../button/Button';
 import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
-    const { data, error } = 
+    const { data } = 
         useSWR(`https://api.themoviedb.org/3/movie/upcoming?api_key=e19297dd210c0b9fcb582119bbdd0e29`, fetcher);
     const movies = data?.results || [];
     // console.log(movies)
