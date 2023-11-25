@@ -32,21 +32,21 @@ function BannerItem({item}) {
             <img src={`https://image.tmdb.org/t/p/original/${poster_path}`}
                 className="object-t object-c w-full h-full rounded-xl" alt=""/>
 
-                <div className="absolute will-change-auto h1/2 left-5 bottom-5 right-5 mb-2">
-                    <h2 className="text-white font-bold text-4xl">{title}</h2>
-                    <div className="flex items-center gap-x-3 text-white my-5">
-                        <span className="border border-white py-1 px-2 rounded-md">Marvel</span>
-                        <span className="border border-white py-1 px-2 rounded-md">Cinematic</span>
-                        <span className="border border-white py-1 px-2 rounded-md">Universe</span>
-                    </div>
-                    <Button onClick={() => navigate(`/movies/${id}`)} className="grid grid-cols-2 items-center">Watch
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8 mx-auto">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
-                        </svg>
-                    </Button>
+            <div className="absolute will-change-auto h1/2 left-5 bottom-5 right-5 mb-2">
+                <h2 className="text-white font-bold text-4xl">{title}</h2>
+                <div className="flex items-center gap-x-3 text-white my-5">
+                    <span className="border border-white py-1 px-2 rounded-md">Marvel</span>
+                    <span className="border border-white py-1 px-2 rounded-md">Cinematic</span>
+                    <span className="border border-white py-1 px-2 rounded-md">Universe</span>
                 </div>
+                <Button onClick={() => navigate(`/movies/${id}`)} className="grid grid-cols-2 items-center">Watch
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8 mx-auto">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                    </svg>
+                </Button>
             </div>
+        </div>
     )
 }
 

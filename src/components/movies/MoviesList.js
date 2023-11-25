@@ -4,8 +4,7 @@ import {SwiperSlide, Swiper } from "swiper/react";
 import useSWR from 'swr';
 import { fetcher } from '../../config';
 
-// https://api.themoviedb.org/3/movie/11?api_key=e19297dd210c0b9fcb582119bbdd0e29
-// https://api.themoviedb.org/3/movie/now_playing?api_key= abc
+// https://api.themoviedb.org/3/movie/now_playing?api_key=e19297dd210c0b9fcb582119bbdd0e29
 const MoviesList = ({type = "now_playing"}) => {
     const { data, error } = 
         useSWR(`https://api.themoviedb.org/3/movie/${type}?api_key=e19297dd210c0b9fcb582119bbdd0e29`, fetcher);

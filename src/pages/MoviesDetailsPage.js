@@ -62,35 +62,7 @@ function MovieCredits() {
     )
 }
 
-function MovieVideos() {
-    const {movieId} = useParams();
-    const {data, error} = useSWR(tmdbGetAPI.getMovieVideos(movieId), fetcher);
-    if(!data) return null;
-    const {results} = data;
-    if(!results || results.length <= 0) return null;
-
-    return (
-        <div className="py-10">
-            <div className='flex flex-col gap-5 mt-5'>
-                <h2 className="text-center mb-2 text-3xl font-medium">Trailer</h2>    
-                {results.slice(0, 3).map(item => (
-                    <div key={item.id}>
-                        <h3 className="mb-3 text-lg text-secondary font-medium">{item.name}</h3>
-                        <div key={item.id} className="aspect-video w-full mb-5">
-                            <iframe width="853" height="480" src={`https://www.youtube.com/embed/${item.key}`} 
-                                title="Galaxy S24 Ultra và toàn bộ thiết kế mới - Cái kết của một xu hướng!" frameBorder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                allowFullScreen
-                                className="w-full h-full object-fill rounded-xl">
-                            </iframe>
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </div>
-    )
-}
-
+//----------------------------------videos-----------------------------------------------------------------------------------
 function MovieSimilar() {
     const {movieId} = useParams();
     const {data, error} = useSWR(tmdbGetAPI.getMovieSimilar(movieId), fetcher);
