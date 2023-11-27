@@ -117,8 +117,3 @@ function MovieSimilar() {
      )
 }
 export default MoviesDetailsPage;
-
-{/* <iframe width="853" height="480" src="https://www.youtube.com/embed/gGoXIu5gMNI" 
-title="Galaxy S24 Ultra và toàn bộ thiết kế mới - Cái kết của một xu hướng!" frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-allowfullscreen></iframe> */}
