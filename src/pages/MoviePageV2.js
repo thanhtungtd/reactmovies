@@ -41,7 +41,7 @@ const MoviePageV2 = () => {
             setUrl(`https://api.themoviedb.org/3/movie/popular?api_key=e19297dd210c0b9fcb582119bbdd0e29&page=${currentPage}`);
         }
     }, [filterDebounce, currentPage]);
-    // (Phân trang--------------------------------------------)
+    // (Load more--------------------------------------------)
     useEffect(() => {
         if(!data || !data.total_pages) return;
         setPageCount(Math.ceil(data.total_results / itemsPerPage));

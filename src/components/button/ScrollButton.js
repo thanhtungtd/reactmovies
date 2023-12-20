@@ -24,7 +24,7 @@ const ScrollButton = () => {
   window.addEventListener("scroll", toggleVisible);
   return (
     <button
-      className="fixed w-[50px] h-[50px] rounded-full bottom-10 text-lg z-30 cursor-pointer text-red-500 bg-white animate-pulse right-5"
+      className="fixed w-[40px] h-[40px] rounded-full bottom-10 text-lg z-30 cursor-pointer text-red-500 bg-white animate-pulse right-5"
       onClick={scrollToTop}
       style={{ display: visible ? "inline" : "none" }}
     >
@@ -34,7 +34,7 @@ const ScrollButton = () => {
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="w-6 h-6 mx-auto animate-bounce shadow-md"
+        class="w-6 h-6 mx-auto animate-bounce"
       >
         <path
           stroke-linecap="round"

@@ -6,7 +6,7 @@ import Main from "./components/layout/Main";
 import Banner from "./components/banner/Banner";
 import MoviePageV2 from "./pages/MoviePageV2";
 // import HomePage from "./pages/HomePage";
-import MoviePage from "./pages/MoviePage";
+// import MoviePage from "./pages/MoviePage";
 import ScrollButton from "./components/button/ScrollButton";
 // import MoviesDetailsPage from "./pages/MoviesDetailsPage";
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -28,7 +28,6 @@ function App() {
               </>
               }>
             </Route>
-
             <Route path="/movies" element={<MoviePageV2></MoviePageV2>}></Route>
             <Route path="/movies/:movieId" element={<MoviesDetailsPage></MoviesDetailsPage>}></Route>
           </Route>
